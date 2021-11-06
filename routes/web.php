@@ -32,5 +32,6 @@ Route::middleware('auth')->group(function() {
     Route::resource('noticias', NoticiasController::class);
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/noticias/form', [NoticiasController::class, 'form']);
+    Route::get('/teste', function() {});
 });
 
